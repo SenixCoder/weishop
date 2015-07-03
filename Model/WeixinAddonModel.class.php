@@ -1,8 +1,9 @@
 <?php
-
 namespace Addons\Weishop\Model;
+
 use Home\Model\WeixinModel;
 use Addon\UserCenter\Model\UserCenter;
+use Common\Model\FollowModel;
 
 /**
  * Weishop的微信模型
@@ -12,8 +13,8 @@ class WeixinAddonModel extends WeixinModel{
         $config = getAddonConfig ( 'Weishop' ); // 获取后台插件的配置参数
         $model = $this->getModel ( 'follow' );
         $map ['openid'] = get_openid ();
-        $data = M ( get_table_name ( $model ['id'] ) )->where ( $map )->find ();
-        $this->replyText(json_encode($data));
+        $data = M(get_table_name($model ['id']))->where ($map)->find();
+        $this->replyText('http://szjlxh.com/weiphp/Addons/Weishop/shop/index.php?route=accout/fromwx&openid='.$map['openid']);
 	}
 
 	// 关注公众号事件

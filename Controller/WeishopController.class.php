@@ -2,8 +2,7 @@
 namespace Addons\Weishop\Controller;
 
 use Home\Controller\AddonsController;
-use User\Api\UserApi;
-use Addons\UserCenter\Model\UserCenterModel;
+use Common\Model\FollowModel;
 
 class WeishopController extends AddonsController {
 
