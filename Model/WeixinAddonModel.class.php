@@ -10,11 +10,10 @@ use Common\Model\FollowModel;
  */
 class WeixinAddonModel extends WeixinModel{
 	function reply($dataArr, $keywordArr = array()) {
-        $config = getAddonConfig ( 'Weishop' ); // 获取后台插件的配置参数
+        $config = getAddonConfig ('Weishop'); // 获取后台插件的配置参数
         $model = $this->getModel ( 'follow' );
         $map ['openid'] = get_openid ();
-        $data = M(get_table_name($model ['id']))->where ($map)->find();
-        $this->replyText('http://szjlxh.com/weiphp/Addons/Weishop/shop/index.php?route=accout/fromwx&openid='.$map['openid']);
+        $this->replyText('http:/www.szjlxh.com/weiphp/Addons/Weishop/shop/index.php?route=account/registerbywx&openid='.$map['openid']);
 	}
 
 	// 关注公众号事件
