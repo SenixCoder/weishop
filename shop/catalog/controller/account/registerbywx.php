@@ -48,11 +48,11 @@ class ControllerAccountRegisterbywx extends Controller {
                 $this->error['warning'] = $this->language->get('error_approved');
             }
             if (!$this->error) {
-                if (!$this->customer->login($this->request->get['email'], $_GET['password'])) {
+                if (!$this->customer->login($usr_info['email'], $usr_info['password'])) {
                     $this->error['warning'] = $this->language->get('error_login');
-                    $this->model_account_customer->addLoginAttempt($_GET['email']);
+                    $this->model_account_customer->addLoginAttempt($usr_info['email']);
                 } else {
-                    $this->model_account_customer->deleteLoginAttempts($_GET['email']);
+                    $this->model_account_customer->deleteLoginAttempts($usr_info['email']);
                 }
             }
         }
