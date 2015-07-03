@@ -3,6 +3,7 @@ namespace Addons\Weishop\Controller;
 
 use Home\Controller\AddonsController;
 use User\Api\UserApi;
+use Addons\UserCenter\Model\UserCenterModel;
 
 class WeishopController extends AddonsController {
 
@@ -35,7 +36,9 @@ class WeishopController extends AddonsController {
     }
 
     public function index() {
-        $this->replyText(get_token());
-        de(get_token());
+        $model = $this->getModel ( 'follow' );
+        $map ['openid'] = get_openid ();
+        $data = M ( get_table_name ( $model ['id'] ) )->where ( $map )->find ();
+        dd($data);
     }
 }
