@@ -5,7 +5,7 @@ final class Action {
 	private $method;
 	private $args = array();
 
-	public function __construct($route, $args = array()) {
+    public function __construct($route, $args = array()) {
 		$path = '';
 
 		// Break apart the route
@@ -22,12 +22,12 @@ final class Action {
 				continue;
 			}
 
-			$file = DIR_APPLICATION . 'controller/' . str_replace(array('../', '..\\', '..'), '', $path) . '.php';
+            $file = DIR_APPLICATION . 'controller/' . str_replace(array('../', '..\\', '..'), '', $path) . '.php';
 
 			if (is_file($file)) {
 				$this->file = $file;
 
-				$this->class = 'Controller' . preg_replace('/[^a-zA-Z0-9]/', '', $path);
+                $this->class = 'Controller' . preg_replace('/[^a-zA-Z0-9]/', '', $path);
 
 				array_shift($parts);
 
@@ -39,7 +39,7 @@ final class Action {
 			$this->args = $args;
 		}
 
-		$method = array_shift($parts);
+        $method = array_shift($parts);
 
 		if ($method) {
 			$this->method = $method;

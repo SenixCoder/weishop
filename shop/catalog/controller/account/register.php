@@ -17,12 +17,12 @@ class ControllerAccountRegister extends Controller {
 
 		$this->load->model('account/customer');
 
-		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+        if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
 			$this->model_account_customer->addCustomer($this->request->post);
-			
+
 			// Clear any previous login attempts for unregistered accounts.
 			$this->model_account_customer->deleteLoginAttempts($this->request->post['email']);
-			
+
 			$this->customer->login($this->request->post['email'], $this->request->post['password']);
 
 			unset($this->session->data['guest']);
@@ -283,13 +283,13 @@ class ControllerAccountRegister extends Controller {
 			} else {
 				$account_custom_field = array();
 			}
-			
+
 			if (isset($this->request->post['custom_field']['address'])) {
 				$address_custom_field = $this->request->post['custom_field']['address'];
 			} else {
 				$address_custom_field = array();
-			}			
-			
+			}
+
 			$data['register_custom_field'] = $account_custom_field + $address_custom_field;
 		} else {
 			$data['register_custom_field'] = array();
@@ -393,7 +393,7 @@ if ((utf8_strlen(trim($this->request->post['address_1'])) < 3) || (utf8_strlen(t
 		} else {
 			$customer_group_id = $this->config->get('config_customer_group_id');
 		}
-		
+
 		// Custom field validation
 		$this->load->model('account/custom_field');
 
