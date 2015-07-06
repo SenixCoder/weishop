@@ -1,5 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### *.iml template
+./shop/
+
+shop/config*
+shop/admin/config*
 
 
 ### .git template
