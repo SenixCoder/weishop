@@ -309,7 +309,7 @@
 </div>
 <?php } ?>
 <div class="buttons">
-  <div class="pull-right">
+  <div class="pull-right-comment">
     <input type="button" value="<?php echo $button_continue; ?>" id="button-guest" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary" />
   </div>
 </div>

@@ -493,7 +493,7 @@
         </fieldset>
         <?php if ($text_agree) { ?>
         <div class="buttons">
-          <div class="pull-right"><?php echo $text_agree; ?>
+          <div class="pull-right-comment"><?php echo $text_agree; ?>
             <?php if ($agree) { ?>
             <input type="checkbox" name="agree" value="1" checked="checked" />
             <?php } else { ?>
@@ -505,7 +505,7 @@
         </div>
         <?php } else { ?>
         <div class="buttons">
-          <div class="pull-right">
+          <div class="pull-right-comment">
             <input type="submit" value="<?php echo $button_continue; ?>" class="btn btn-primary" />
           </div>
         </div>

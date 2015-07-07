@@ -289,14 +289,14 @@
 <?php } ?>
 <?php if ($text_agree) { ?>
 <div class="buttons clearfix">
-  <div class="pull-right"><?php echo $text_agree; ?> &nbsp;
+  <div class="pull-right-comment"><?php echo $text_agree; ?> &nbsp;
     <input type="checkbox" name="agree" value="1" />
     <input type="button" value="<?php echo $button_continue; ?>" id="button-register" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary" />
   </div>
 </div>
 <?php } else { ?>
 <div class="buttons clearfix">
-  <div class="pull-right">
+  <div class="pull-right-comment">
     <input type="button" value="<?php echo $button_continue; ?>" id="button-register" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary" />
   </div>
 </div>

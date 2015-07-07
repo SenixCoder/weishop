@@ -146,7 +146,7 @@
           </div>
         </fieldset>
         <div class="buttons">
-          <div class="pull-right">
+          <div class="pull-right-comment">
             <input class="btn btn-primary" type="submit" value="<?php echo $button_submit; ?>" />
           </div>
         </div>

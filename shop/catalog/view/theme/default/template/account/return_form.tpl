@@ -149,7 +149,7 @@
             </div>
           </div>
           <div class="form-group">
-            <div class="col-sm-10 pull-right">
+            <div class="col-sm-10 pull-right-comment">
               <img src="index.php?route=tool/captcha" alt="" />
               <?php if ($error_captcha) { ?>
                 <div class="text-danger"><?php echo $error_captcha; ?></div>
@@ -159,8 +159,8 @@
         </fieldset>
         <?php if ($text_agree) { ?>
         <div class="buttons clearfix">
-          <div class="pull-left"><a href="<?php echo $back; ?>" class="btn btn-danger"><?php echo $button_back; ?></a></div>
-          <div class="pull-right"><?php echo $text_agree; ?>
+          <div class="pull-left-edit"><a href="<?php echo $back; ?>" class="btn btn-danger"><?php echo $button_back; ?></a></div>
+          <div class="pull-right-edit"><?php echo $text_agree; ?>
             <?php if ($agree) { ?>
             <input type="checkbox" name="agree" value="1" checked="checked" />
             <?php } else { ?>
@@ -171,8 +171,8 @@
         </div>
         <?php } else { ?>
         <div class="buttons clearfix">
-          <div class="pull-left"><a href="<?php echo $back; ?>" class="btn btn-default"><?php echo $button_back; ?></a></div>
-          <div class="pull-right">
+          <div class="pull-left-edit"><a href="<?php echo $back; ?>" class="btn btn-default"><?php echo $button_back; ?></a></div>
+          <div class="pull-right-edit">
             <input type="submit" value="<?php echo $button_submit; ?>" class="btn btn-primary" />
           </div>
         </div>

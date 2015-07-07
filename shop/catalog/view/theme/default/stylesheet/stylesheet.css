@@ -123,7 +123,8 @@ div.required .control-label:before {
 }
 /* logo */
 #logo {
-	margin: 0 0 10px 0;
+	margin: 0 0 0 0;
+    padding-bottom 10px;
 }
 /* search */
 #search {
@@ -412,8 +413,25 @@ footer h5 {
 	background-repeat: repeat-x;
 	border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;
 }
-.btn-primary {
+.btn-default-edit {
+	color: #777;
     width:100%;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	background-color: #e7e7e7;
+	background-image: linear-gradient(to bottom, #eeeeee, #dddddd);
+	background-repeat: repeat-x;
+	border-color: #dddddd #dddddd #b3b3b3 #b7b7b7;
+}
+.btn-primary-edit {
+    width:100%;
+	color: #ffffff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	background-color: #229ac8;
+	background-image: linear-gradient(to bottom, #23a1d1, #1f90bb);
+	background-repeat: repeat-x;
+	border-color: #1f90bb #1f90bb #145e7a;
+}
+.btn-primary {
 	color: #ffffff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color: #229ac8;
@@ -541,7 +559,7 @@ footer h5 {
     padding:10px;
 }
 .product-grid .product-thumb .image {
-	float: none;
+	/* float: none; */
 }
 @media (min-width: 767px) {
 .product-list .product-thumb .image {

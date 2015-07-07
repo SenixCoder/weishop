@@ -5,7 +5,7 @@
   <p><?php echo $text_payment; ?></p>
 </div>
 <div class="buttons">
-  <div class="pull-right">
+  <div class="pull-right-comment">
     <input type="button" value="<?php echo $button_confirm; ?>" id="button-confirm" class="btn btn-primary" />
   </div>
 </div>
