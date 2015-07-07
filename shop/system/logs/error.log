@@ -126,3 +126,4 @@
 2015-07-06 9:01:23 - PHP Notice:  Undefined index: email in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 46
 2015-07-07 6:10:15 - PHP Notice:  Undefined index: telephone in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/model/account/customer.php on line 16
 2015-07-07 6:10:15 - PHP Notice:  Undefined index: lastname in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 37
+2015-07-07 7:04:15 - PHP Notice:  Undefined index: email in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 46

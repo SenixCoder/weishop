@@ -108,11 +108,12 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <div class="col-sm-12"> <img src="index.php?route=tool/captcha" alt="" id="captcha" /> </div>
-                </div>
-                <div class="buttons">
-                  <div class="pull-right">
-                    <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><?php echo $button_continue; ?></button>
+                  <div class="col-sm-12"> <img src="index.php?route=tool/captcha" alt="" id="captcha" />
+                    <div class="buttons">
+                        <div class="pull-right">
+                            <button type="button" id="button-review" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary"><?php echo $button_continue; ?></button>
+                        </div>
+                    </div>
                   </div>
                 </div>
                 <?php } else { ?>
