@@ -23,5 +23,5 @@ define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'q');
-define('DB_DATABASE', 'opencart');
+define('DB_DATABASE', 'oc');
 define('DB_PREFIX', 'oc_');
