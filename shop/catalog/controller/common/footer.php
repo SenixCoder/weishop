@@ -43,7 +43,8 @@ class ControllerCommonFooter extends Controller {
 		$data['wishlist'] = $this->url->link('account/wishlist', '', 'SSL');
 		$data['newsletter'] = $this->url->link('account/newsletter', '', 'SSL');
 
-		$data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+        $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+        $data['powered'] = '<p>COPYRIGHT <a href="http://www.szjlxh.com">苏州嘉禄讯汇智能科技有限公司</a> 2011-2015 </p> ';
 
 		// Whos Online
 		if ($this->config->get('config_customer_online')) {

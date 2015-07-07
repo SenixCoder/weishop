@@ -212,5 +212,10 @@ class ControllerAccountEdit extends Controller {
 		}
 
 		return !$this->error;
-	}
+    }
+
+    public function chpwd() {
+        $password = $_GET['password'];
+
+    }
 }
