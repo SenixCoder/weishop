@@ -1,4 +1,10 @@
 <?php
+
+// if (!isWX()) {
+    // echo ('<center><h1>请使用微信访问!</h1></center>');
+    // die();
+// }
+
 // Version
 define('VERSION', '2.0.1.1');
 
@@ -260,3 +266,13 @@ $controller->dispatch($action, new Action('error/not_found'));
 
 // Output
 $response->output();
+
+
+function isWX() {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    if (strpos($user_agent, 'MicroMessenger') === false) {// 非微信浏览器禁止浏览
+        return false;
+    }
+    return true;
+}
+
