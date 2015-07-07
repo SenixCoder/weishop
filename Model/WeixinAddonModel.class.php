@@ -11,7 +11,6 @@ use Common\Model\FollowModel;
 class WeixinAddonModel extends WeixinModel{
 	function reply($dataArr, $keywordArr = array()) {
         $config = getAddonConfig ('Weishop'); // 获取后台插件的配置参数
-        $model = $this->getModel ( 'follow' );
         $map ['openid'] = get_openid ();
         $this->replyText('http:/www.szjlxh.com/weiphp/Addons/Weishop/shop/index.php?route=account/registerbywx&openid='.$map['openid']);
 	}
