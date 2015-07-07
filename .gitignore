@@ -4,7 +4,7 @@
 
 shop/config*
 shop/admin/config*
-
+shop/system/cache/*
 
 ### .git template
 
