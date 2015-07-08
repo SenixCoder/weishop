@@ -129,3 +129,5 @@
 2015-07-07 7:04:15 - PHP Notice:  Undefined index: email in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 46
 2015-07-07 9:57:09 - PHP Notice:  Error: Could not load model /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/model/payment/amazon_checkout.php! in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/system/engine/loader.php on line 24
 2015-07-07 9:59:11 - PHP Notice:  Error: Could not load model /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/model/payment/amazon_checkout.php! in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/system/engine/loader.php on line 24
+2015-07-07 10:27:07 - PHP Notice:  Undefined index: email in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 46
+2015-07-07 14:44:37 - PHP Notice:  Undefined index: email in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 46
