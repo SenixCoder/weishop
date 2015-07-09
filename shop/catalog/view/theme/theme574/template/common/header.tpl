@@ -136,8 +136,8 @@
 				<?php  echo $language; ?>
 			</div>
 		</div>
-		<?php echo $cart; ?>
 -->
+		<?php echo $cart; ?>
 		<div class="button-account toggle-wrap">
 			<span class="toggle material-design-user157"  type="button"></span>
 			<div class="toggle_cont pull-right">
