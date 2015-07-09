@@ -1,12 +1,7 @@
-# Created by .ignore support plugin (hsz.mobi)
-### *.iml template
-./shop/
-
 shop/config.php
 shop/admin/config.php
 shop/system/cache/*
 shop/image/cache/*
-
 
 ### .git template
 
