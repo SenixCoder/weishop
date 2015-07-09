@@ -8,7 +8,6 @@ class ControllerModuleParallax extends Controller {
 
 		
 		$this->document->addScript('catalog/view/javascript/parallax/cherry-fixed-parallax.js');
-		$this->document->addScript('catalog/view/javascript/parallax/device.min.js');
 		$this->document->addStyle('catalog/view/javascript/parallax/css/parallax.css');
 		
 

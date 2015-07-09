@@ -56,7 +56,7 @@ function modification($filename) {
 	if (substr($filename, 0, strlen(DIR_SYSTEM)) == DIR_SYSTEM) {
 		$file = DIR_MODIFICATION . 'system/' . substr($filename, strlen(DIR_SYSTEM));
 	}
-
+	
 	if (file_exists($file)) {
 		return $file;
 	} else {
@@ -92,12 +92,3 @@ require_once(modification(DIR_SYSTEM . 'engine/registry.php'));
 // Helper
 require_once(DIR_SYSTEM . 'helper/json.php');
 require_once(DIR_SYSTEM . 'helper/utf8.php');
-
-function d($value) {
-    var_dump($value);
-}
-
-function dd($value) {
-    var_dump($value);
-    die();
-}

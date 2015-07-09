@@ -51,6 +51,7 @@
               <?php } ?>
             </div>
           </div>
+<!--
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="input-lastname"><?php echo $entry_lastname; ?></label>
             <div class="col-sm-9">
@@ -60,6 +61,7 @@
               <?php } ?>
             </div>
           </div>
+-->
           <div class="form-group required">
             <label class="col-sm-3 control-label" for="input-email"><?php echo $entry_email; ?></label>
             <div class="col-sm-9">

@@ -56,7 +56,7 @@
 <script src="<?php echo $script; ?>" type="text/javascript"></script>
 <?php } ?>
 <script src="catalog/view/theme/<?php echo $theme_path; ?>/js/device.min.js" type="text/javascript"></script>
-<!--[if lt IE 9]><div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]--> 
+<!--[if lt IE 9]><div style='clear:both;height:59px;padding:0 15px 0 15px;position:relative;z-index:10000;text-align:center;'><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div><![endif]-->
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo $class; ?>">
@@ -71,7 +71,7 @@
                 <li><a href="<?php echo $order; ?>"><i class="fa fa-file-text-o"></i><?php echo $text_order; ?></a></li>
                 <li><a href="<?php echo $transaction; ?>"><i class="fa fa-exchange"></i><?php echo $text_transaction; ?></a></li>
                 <li><a href="<?php echo $download; ?>"><i class="fa fa-download"></i><?php echo $text_download; ?></a></li>
-                <li><a href="<?php echo $logout; ?>"><i class="fa fa-unlock"></i><?php echo $text_logout; ?></a></li>
+            <!--    <li><a href="<?php echo $logout; ?>"><i class="fa fa-unlock"></i><?php echo $text_logout; ?></a></li> -->
             <?php } else { ?>
                 <li><a href="<?php echo $register; ?>"><i class="fa fa-user"></i> <?php echo $text_register; ?></a></li>
                 <li><a href="<?php echo $login; ?>"><i class="fa fa-lock"></i><?php echo $text_login; ?></a></li>
@@ -81,9 +81,9 @@
             </li>
             <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i
                         class="fa fa-shopping-cart"></i> <span><?php echo $text_shopping_cart; ?></span></a></li>
-            <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i>
-                    <span><?php echo $text_checkout; ?></span></a></li>
+            <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i><span><?php echo $text_checkout; ?></span></a></li>
         </ul>
+<!--
         <?php if ($maintenance == 0){ ?>
             <ul class="foot">
                 <?php if ($informations) { ?>
@@ -98,13 +98,13 @@
             <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
             <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
         </ul>
-
         <ul class="foot foot-2">
             <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
             <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
             <li><a href="<?php echo $affiliate; ?>"><?php echo $text_affiliate; ?></a></li>
             <li><a href="<?php echo $special; ?>"><?php echo $text_special; ?></a></li>
         </ul>
+ -->
         <ul class="foot foot-3">
             <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
             <li><a href="<?php echo $newsletter; ?>"><?php echo $text_newsletter; ?></a></li>
@@ -126,30 +126,31 @@
 			<h1><a href="<?php echo $home; ?>"><?php echo $name; ?></a></h1>
 			<?php } ?>
 		</div>
-		
+
 		<div class="pull-right">
-		
+
+<!--
 		<div class="button-setting toggle-wrap">
 			<span class="toggle material-design-settings49"  type="button" ></span>
 			<div class="toggle_cont pull-right">
-				<?php echo $currency; ?>
-				<?php echo $language; ?>
+				<?php // echo $currency; ?>
+				<?php // echo $language; ?>
 			</div>
 		</div>
-		
+-->
 		<?php echo $cart; ?>
-		
+
 		<div class="button-account toggle-wrap">
 			<span class="toggle material-design-user157"  type="button"></span>
 			<div class="toggle_cont pull-right">
 				<?php if ($logged) { ?>
 				<ul class="list-unstyled">
-					
+
 					<li><a href="<?php echo $wishlist; ?>"><?php echo $text_wishlist; ?></a></li>
 					<li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
 					<li><a href="<?php echo $shopping_cart; ?>"><?php echo $text_shopping_cart; ?></a></li>
 					<li><a href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></li>
-					<li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+					<!-- <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li> -->
 				</ul>
 				<?php } else { ?>
 				<ul class="list-unstyled">
@@ -159,11 +160,11 @@
 				<?php } ?>
 			</div>
 		</div>
-		
+
 		<?php echo $search; ?>
-		
+
 		</div>
-		
+
 	</div>
 
 
@@ -174,12 +175,11 @@
 			<?php if ($categories_tm) {  echo $categories_tm; } ?>
 		</div>
 	</div>
-	
+
 	<script type="text/javascript">
 		jQuery(window).load(function () {
 		if ($('body').width() > 767) {
 			$('#tm_menu').TMStickUp({})
-		
 		}});
 	</script>
 

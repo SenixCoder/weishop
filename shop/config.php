@@ -19,7 +19,7 @@ define('DIR_MODIFICATION', '/Users/Mike/Workspace/php-code/weiphp/Addons/Weishop
 define('DIR_LOGS', '/Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/system/logs/');
 
 // DB
-define('DB_DRIVER', 'mysqli');
+define('DB_DRIVER', 'mpdo');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'q');

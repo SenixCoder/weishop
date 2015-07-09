@@ -5,9 +5,9 @@ class ControllerModuleTmGoogleMap extends Controller {
 
         $this->document->addStyle('catalog/view/javascript/tmgooglemap/tmgooglemap.css');
         if ($this->config->get('tm_google_map_sensor') == 1){
-		    $this->document->addScript('//maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=true');
+		    $this->document->addScript('https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&sensor=true');
         }else{
-            $this->document->addScript('//maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false');
+            $this->document->addScript('https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true&sensor=false');
         }
 		$this->document->addScript('catalog/view/javascript/tmgooglemap/jquery.rd-google-map.js');
 
