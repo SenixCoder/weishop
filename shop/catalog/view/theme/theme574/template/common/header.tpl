@@ -128,7 +128,7 @@
 		</div>
 
 		<div class="pull-right">
-
+<!--
 		<div class="button-setting toggle-wrap">
 			<span class="toggle material-design-settings49"  type="button" ></span>
 			<div class="toggle_cont pull-right">
@@ -137,7 +137,7 @@
 			</div>
 		</div>
 		<?php echo $cart; ?>
-
+-->
 		<div class="button-account toggle-wrap">
 			<span class="toggle material-design-user157"  type="button"></span>
 			<div class="toggle_cont pull-right">
