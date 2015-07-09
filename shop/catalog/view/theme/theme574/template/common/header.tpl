@@ -129,15 +129,13 @@
 
 		<div class="pull-right">
 
-<!--
 		<div class="button-setting toggle-wrap">
 			<span class="toggle material-design-settings49"  type="button" ></span>
 			<div class="toggle_cont pull-right">
-				<?php // echo $currency; ?>
-				<?php // echo $language; ?>
+				<?php  echo $currency; ?>
+				<?php  echo $language; ?>
 			</div>
 		</div>
--->
 		<?php echo $cart; ?>
 
 		<div class="button-account toggle-wrap">
