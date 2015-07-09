@@ -2,10 +2,10 @@
 ### *.iml template
 ./shop/
 
-./shop/config*
-./shop/admin/config*
-./shop/system/cache/*
-./shop/image/cache/*
+shop/config.php
+shop/admin/config.php
+shop/system/cache/*
+shop/image/cache/*
 
 
 ### .git template
