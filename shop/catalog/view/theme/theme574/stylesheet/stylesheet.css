@@ -2169,6 +2169,7 @@ div.required .control-label:before {
                       Product
 =========================================================*/
 .product-layout {
+    max-width: 50%;
   margin-bottom: 18px; }
 
 /*=================== Product Image ===================*/
@@ -2506,9 +2507,6 @@ div.required .control-label:before {
 =========================================================*/
 .box, .product-grid {
   margin-bottom: 30px; }
-  .box-content {
-    display:none;
-  }
   .box .box-heading, .product-grid .box-heading {
     margin: 10px 0 25px;
     position: relative;
