@@ -4,3 +4,12 @@
 2015-07-09 6:18:14 - PHP Notice:  Undefined index: address_2 in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/model/account/customer.php on line 20
 2015-07-09 6:18:14 - PHP Notice:  Undefined index: lastname in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 33
 2015-07-09 6:55:49 - PHP Notice:  Undefined index: email in /Users/Mike/Workspace/php-code/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 42
+2015-07-13 6:05:26 - PHP Notice:  Undefined index: lastname in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/model/account/customer.php on line 16
+2015-07-13 6:05:26 - PHP Notice:  Undefined index: telephone in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/model/account/customer.php on line 16
+2015-07-13 6:05:26 - PHP Notice:  Undefined index: lastname in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/model/account/customer.php on line 20
+2015-07-13 6:05:26 - PHP Notice:  Undefined index: address_2 in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/model/account/customer.php on line 20
+2015-07-13 6:05:26 - PHP Notice:  Undefined index: lastname in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 33
+2015-07-13 6:05:26 - PHP Notice:  Undefined index: email in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 42
+2015-07-13 6:06:05 - PHP Notice:  Undefined index: email in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 42
+2015-07-13 6:07:49 - PHP Notice:  Undefined index: email in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 42
+2015-07-13 6:18:56 - PHP Notice:  Undefined index: email in /var/www/php-web/weiphp/Addons/Weishop/shop/catalog/controller/account/registerbywx.php on line 42
