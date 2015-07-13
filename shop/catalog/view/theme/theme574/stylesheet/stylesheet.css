@@ -1270,6 +1270,7 @@ div.required .control-label:before {
   padding-left: 60px !important; }
 
 .menu-gadget .menu {
+    display:none;
   padding: 0;
   margin: 0; }
   .menu-gadget .menu ul {
@@ -2671,7 +2672,7 @@ aside .box .product-layout {
 @media (max-width: 600px) {
   #content .box .product-layout,
   .product-grid, .product-list {
-    width: 100%; } }
+    width: 50%; } }
 /*==================   Lazy Img    ======================*/
 .lazy {
   display: block;
