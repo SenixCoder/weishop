@@ -1270,7 +1270,6 @@ div.required .control-label:before {
   padding-left: 60px !important; }
 
 .menu-gadget .menu {
-    display:none;
   padding: 0;
   margin: 0; }
   .menu-gadget .menu ul {
@@ -1717,9 +1716,9 @@ div.required .control-label:before {
   width: 100%;
   color: #fff;
   background: #f56256;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 26px;
-  font-weight: 30;
+  font-weight: 300;
   padding: 12px 10px;
   text-align: center;
   text-transform: uppercase;
@@ -2169,7 +2168,6 @@ div.required .control-label:before {
                       Product
 =========================================================*/
 .product-layout {
-    max-width: 50%;
   margin-bottom: 18px; }
 
 /*=================== Product Image ===================*/
