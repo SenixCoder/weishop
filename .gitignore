@@ -2,6 +2,7 @@ shop/config.php
 shop/admin/config.php
 shop/system/cache/*
 shop/image/cache/*
+shop/system/logs/*.log
 
 ### .git template
 
