@@ -1613,6 +1613,7 @@ background: none; }
     border: none;
     padding: 12px 14px;
     outline: none;
+    width: 100%;
 text-transform: uppercase; }
 .btn:visited i,
 .btn i {
