@@ -533,7 +533,7 @@ box-shadow: none; }
 float: right; }
 .header .logo {
     float: left;
-margin: 6px 0 10px; 
+    margin: 6px 0 10px; 
 }
 .header .img-logo {
     max-height: 50px;
@@ -1534,9 +1534,8 @@ display: none; }
     aside .box.bestsellers .product-layout,
     aside .box.latest .product-layout,
     aside .box.specials .product-layout {
-        display: inline-block;
         float: none;
-    width: 270px; }
+    width: 50%; }
     aside .box.bestsellers .product-layout .product-thumb,
     aside .box.latest .product-layout .product-thumb,
     aside .box.specials .product-layout .product-thumb {

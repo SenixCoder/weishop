@@ -7,7 +7,7 @@
 			<?php $bes=0; foreach ($products as $product) { $bes++ ?>
 			<div class="product-layout col-lg-3 col-md-3 col-sm-3 col-xs-12">
 				<div class="product-thumb transition" >
-				
+
 				<div class="quick_info">
 					<div id="quickview_bestsellers_<?php echo $bes?>">
 						<div>
@@ -50,7 +50,7 @@
 										<?php } ?>
 										<?php } ?>
 									</div>
-										
+
 								</div>
 								<div class="col-sm-12">
 									<div class="quickview_description description">
@@ -60,11 +60,11 @@
 						</div>
 					</div>
 				</div>
-				
+
 				<div class="image">
 					<a class="lazy" style="padding-bottom: <?php echo ($product['img-height']/$product['img-width']*100); ?>%" href="<?php echo $product['href']; ?>"> <img alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-responsive" data-src="<?php echo $product['thumb']; ?>" src="#"/>
 					</a>
-					
+
 					<div class="stickers">
 					<?php
 					$arr_last = $product['last_array'];
@@ -75,14 +75,14 @@
 						}
 					?>
 					<?php if ($product['special']) { ?>
-						<div class="sale"><?php echo $text_sale; ?></div>				
+						<div class="sale"><?php echo $text_sale; ?></div>
 					<?php } ?>
 					</div>
-					
+
 				</div>
 				<div class="caption">
-					<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>				
-					
+					<div class="name"><a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a></div>
+
 					<?php if ($product['price']) { ?>
 					<div class="price">
 					<?php if (!$product['special']) { ?>
@@ -100,10 +100,10 @@
 					<button class="product-btn-add" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="material-design-shopping231"></i> <span class="hidden-sm"><?php echo $button_cart; ?></span></button>
 					<div class="row">
 					<button class="product-btn" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="material-design-favorite22"></i></button>
-					<button class="product-btn" type="button"  data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="material-design-shuffle24"></i></button>				
+					<button class="product-btn" type="button"  data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="material-design-shuffle24"></i></button>
 					<a class="quickview product-btn" data-rel="details" data-toggle="tooltip" href="#quickview_bestsellers_<?php echo $bes?>"  title="<?php echo $text_quick; ?>"><i class="material-design-tick7"></i></a>
 					</div>
-					
+
 					<div class="rating">
 					<?php for ($i = 1; $i <= 5; $i++) { ?>
 					<?php if ($product['rating'] < $i) { ?>
@@ -113,7 +113,7 @@
 					<?php } ?>
 					<?php } ?>
 					</div>
-					
+
 				</div>
 				</div>
 			</div>
