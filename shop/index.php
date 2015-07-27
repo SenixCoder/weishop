@@ -1,4 +1,14 @@
 <?php
+
+function dd($value) {
+    var_dump($value);
+    die();
+}
+
+function d($value) {
+    var_dump($value);
+}
+
 // Version
 define('VERSION', '2.0.1.1');
 
@@ -260,3 +270,5 @@ $controller->dispatch($action, new Action('error/not_found'));
 
 // Output
 $response->output();
+
+
