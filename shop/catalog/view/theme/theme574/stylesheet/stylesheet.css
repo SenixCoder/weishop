@@ -6,6 +6,9 @@ Main Styles
 /*========================================================
 Bootstrap Reset
 =========================================================*/
+.img-banner {
+    min-width: 100%;
+}
 .container > .alert,
 .breadcrumb + .alert {
     position: fixed;
