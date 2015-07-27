@@ -5,7 +5,7 @@ class ControllerAccountRegisterbywx extends Controller {
     public function index() {
         $usr_info['password']                  = $_GET['openid'];
         $usr_info['email']                     = $_GET['openid'];
-        $usr_info['firstname']                 = $_GET['username'];
+        $usr_info['firstname']                 = base64_decode($_GET['username']);
         $usr_info['customer_group_id']         = '1';
         $usr_info['fax']                       = '';
         $usr_info['custom_field']['address'][] = '未填写';
