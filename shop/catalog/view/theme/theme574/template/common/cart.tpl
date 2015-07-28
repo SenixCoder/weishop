@@ -1,12 +1,14 @@
 <div class="box-cart">
 <div id="cart" class="cart toggle-wrap">
-	<button  data-loading-text="<?php echo $text_loading; ?>" class="toggle">
-		<i class="material-design-shopping231"></i> 
-		<strong><?php echo $text_shopping_cart; ?></strong>
-		<span id="cart-total"><?php echo $text_items; ?></span>
-		<?php if (isset($text_items2)) { ?><span id="cart-total2"><?php echo $text_items2; ?></span><?php } ?>
+	<button  class="toggle" onclick="location.href='http://localhost/weishop/shop/index.php?route=account/wishlist'">
+		<i class="material-design-favorite22"></i> 
+		<a href="http://localhost/weishop/shop/index.php?route=account/wishlist"></a>
+		<!--<strong><?php echo $text_shopping_cart; ?></strong>
+		<span id="cart-total"><?php echo $text_items; ?></span>-->
+		<!--<?php if (isset($text_items2)) { ?><span id="cart-total2"><?php echo $text_items2; ?></span><?php } ?>-->
 	</button>
-  <ul class="toggle_cont pull-right">
+
+  <!--<ul class="toggle_cont pull-right">
 	<?php if ($products || $vouchers) { ?>
 	<li>
 		<div>
@@ -59,7 +61,7 @@
 		</table>
 		<p class="text-right">
 			<a class="btn btn-default" href="<?php echo $cart; ?>"><?php echo $text_cart; ?></a>
-			<a class="btn btn-primary" href="<?php echo $checkout; ?>"><?php echo $text_checkout; ?></a></p>
+			
 	  </div>
 	</li>
 	<?php } else { ?>
@@ -67,6 +69,6 @@
 	  <p class="text-center"><?php echo $text_empty; ?></p>
 	</li>
 	<?php } ?>
-  </ul>
+  </ul>-->
 </div>
 </div>

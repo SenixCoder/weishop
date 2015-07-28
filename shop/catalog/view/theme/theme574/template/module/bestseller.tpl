@@ -98,11 +98,11 @@
 				</div>
 				<div class="cart-button">
 					<button class="product-btn-add" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="material-design-shopping231"></i> <span class="hidden-sm"><?php echo $button_cart; ?></span></button>
-					<div class="row">
+					<!--<div class="row">
 					<button class="product-btn" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="material-design-favorite22"></i></button>
 					<button class="product-btn" type="button"  data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="material-design-shuffle24"></i></button>				
 					<a class="quickview product-btn" data-rel="details" data-toggle="tooltip" href="#quickview_bestsellers_<?php echo $bes?>"  title="<?php echo $text_quick; ?>"><i class="material-design-tick7"></i></a>
-					</div>
+					</div>-->
 					
 					<div class="rating">
 					<?php for ($i = 1; $i <= 5; $i++) { ?>
