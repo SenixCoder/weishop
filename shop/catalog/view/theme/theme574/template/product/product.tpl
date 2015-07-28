@@ -159,7 +159,7 @@
 						<?php if ($reward) { ?>
 						<li><?php echo $text_reward; ?> <span><?php echo $reward; ?></span></li>
 						<?php } ?>
-						<li><?php echo $text_stock; ?> <span class="green"><?php echo $stock; ?></span></li>
+						<!--<li><?php echo $text_stock; ?> <span class="green"><?php echo $stock; ?></span></li>-->
 					</ul>
 				</div>
 
@@ -330,10 +330,10 @@
 						<button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn product-btn-add"><i class="material-design-shopping231"></i> <span><?php echo $button_cart; ?></span></button>
 					</div>
 
-					<ul class="product-buttons">
+					<!--<ul class="product-buttons">
 						<li><button type="button" class="btn product-btn" onclick="wishlist.add('<?php echo $product_id; ?>');"><i class="material-design-favorite22"></i> <span class="hidden-xs hidden-sm"><?php echo $button_wishlist; ?></span></button></li>
 						<li><button type="button" class="btn product-btn" onclick="compare.add('<?php echo $product_id; ?>');"><i class="material-design-shuffle24"></i> <span class="hidden-xs hidden-sm"><?php echo $button_compare; ?></span></button></li>
-					</ul>
+					</ul>-->
 
 					<?php if ($tags) { ?>
 					<!-- Product tags -->
