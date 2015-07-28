@@ -248,7 +248,7 @@ class ControllerCheckoutCart extends Controller {
 			if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/checkout/cart.tpl')) {
 				$this->response->setOutput($this->load->view($this->config->get('config_template') . '/template/checkout/cart.tpl', $data));
 			} else {
-				$this->response->setOutput($this->load->view('default//template/checkout/cart.tpl', $data));
+				$this->response->setOutput($this->load->view('default/template/checkout/cart.tpl', $data));
 			}
 		} else {
 			$data['heading_title'] = $this->language->get('heading_title');
@@ -405,7 +405,7 @@ class ControllerCheckoutCart extends Controller {
 			unset($this->session->data['payment_methods']);
 			unset($this->session->data['reward']);
 
-			$this->response->redirect($this->url->link('account/wishlist'));
+			$this->response->redirect($this->url->link('checkout/cart'));
 		}
 
 		$this->response->addHeader('Content-Type: application/json');
