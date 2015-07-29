@@ -319,7 +319,7 @@
 
 					<!-- Add to cart form -->
 					<div class="form-group form-horizontal">
-						<div class="form-group">
+						<div class="form-group" style="display:none">
 							<label class="control-label col-sm-4" for="input-quantity"><?php echo $entry_qty; ?></label>
 							<div class="col-sm-2">
 								<input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
@@ -409,7 +409,7 @@
 						<div class="form-group required">
 							<label class="control-label col-sm-3" for="input-name"><?php echo $entry_name; ?></label>
 							<div class="col-sm-9">
-								<input type="text" name="name" value="" id="input-name" class="form-control" />
+								<input type="text" name="name" value="" id="input-name" class="form-control" readonly="true"></inpput>
 							</div>
 						</div>
 						<div class="form-group required">
@@ -497,8 +497,8 @@
 							<?php } ?>
 						</div>
 						<div class="cart-button">
-							<button class="product-btn-add" type="button" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="material-design-shopping231"></i> <span class="hidden-sm"><?php echo $button_cart; ?></span></button>
-							<div class="row">
+							<button class="product-btn-add" type="button" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="material-design-favorite22"></i> <span class="hidden-sm"><?php echo $button_wishlist; ?></span></button>
+							<div class="row" style="display:none">
 							<button class="product-btn" type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="material-design-favorite22"></i></button>
 							<button class="product-btn" type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="material-design-shuffle24"></i></button>
 							</div>

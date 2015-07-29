@@ -1543,7 +1543,7 @@ display: none; }
     aside .box.latest .product-layout .product-thumb,
     aside .box.specials .product-layout .product-thumb {
         margin: 0;
-        padding: 0 0 155px;
+        padding: 0 0 90px;
     border: none; }
 
     aside .box.bestsellers,
@@ -2614,7 +2614,7 @@ line-height: 35px; } }
     #content .box .product-layout .product-thumb,
     .product-grid .product-thumb, .product-list .product-thumb,
     .box .product-layout .product-thumb {
-        padding: 0 0 155px;
+        padding: 0 0 90px;
         display: inline-block;
         width: 100%;
         border: none;
@@ -2630,7 +2630,7 @@ line-height: 35px; } }
         -o-transition: none;
         -webkit-transition: none;
         transition: none;
-        padding: 0 0 155px;
+        padding: 0 0 90px;
         background: #f5f5f5;
         margin: 0;
         -webkit-box-shadow: none;
