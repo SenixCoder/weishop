@@ -337,6 +337,11 @@
               </div>
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="input-category"><span data-toggle="tooltip" title="<?php echo $help_category; ?>"><?php echo $entry_category; ?></span></label>
+                <div class="col-sm-10" style="display:none">
+                  <?php foreach ($product_categories as $product_category) { ?>
+                  <input type="checkbox" name="product_category[]" value="<?php echo $product_category['category_id']; ?>" ><?php echo $product_category['name']; ?></input>
+                  <?php } ?>
+                </div>
                 <div class="col-sm-10">
                   <input type="text" name="category" value="" placeholder="<?php echo $entry_category; ?>" id="input-category" class="form-control" />
                   <div id="product-category" class="well well-sm" style="height: 150px; overflow: auto;">
